@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a routerLink="/">Fred Seguin</a>
+      <span class="nav-subtitle">{{ 'home.subtitle' | translate }}</span>
+    </div>
+    
+    <button class="nav-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="isMenuOpen">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.experience' | translate }}</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.skills' | translate }}</a></li>
+      <li><a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
+      <li class="language-switcher">
+        <button 
+          class="lang-btn" 
+          [class.active]="currentLang === 'en'" 
+          (click)="switchLanguage('en')">
+          EN
+        </button>
+        <span class="lang-separator">|</span>
+        <button 
+          class="lang-btn" 
+          [class.active]="currentLang === 'fr'" 
+          (click)="switchLanguage('fr')">
+          FR
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

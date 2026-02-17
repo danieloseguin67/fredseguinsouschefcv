@@ -1,0 +1,28 @@
+<div class="experience-container">
+  <div class="section-header">
+    <h1>{{ 'experience.title' | translate }}</h1>
+    <p class="section-subtitle">{{ 'experience.subtitle' | translate }}</p>
+  </div>
+
+  <div class="timeline">
+    <div *ngFor="let exp of experiences; let i = index" class="timeline-item" [class.left]="i % 2 === 0" [class.right]="i % 2 !== 0">
+      <div class="timeline-content">
+        <div class="timeline-marker"></div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h2>{{ getText(exp.restaurant) }}</h2>
+            <span class="period">{{ exp.period }}</span>
+          </div>
+          <h3 class="role">{{ getText(exp.role) }}</h3>
+          <p class="description">{{ getText(exp.description) }}</p>
+          <div class="achievements" *ngIf="exp.achievements && exp.achievements.length > 0">
+            <h4>{{ 'experience.keyAchievements' | translate }}</h4>
+            <ul>
+              <li *ngFor="let achievement of exp.achievements">{{ getText(achievement) }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

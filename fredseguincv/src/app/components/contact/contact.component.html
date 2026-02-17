@@ -1,0 +1,105 @@
+<div class="contact-container">
+  <div class="section-header">
+    <h1>{{ 'contact.title' | translate }}</h1>
+    <p class="section-subtitle">{{ 'contact.subtitle' | translate }}</p>
+  </div>
+
+  <div class="contact-content">
+    <div class="contact-info">
+      <h2>{{ 'contact.getInTouch' | translate }}</h2>
+      <p>{{ 'contact.intro' | translate }}</p>
+      
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="icon">📧</span>
+          <div>
+            <h3>{{ 'contact.email' | translate }}</h3>
+            <p>fred.seguin&#64;example.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">📱</span>
+          <div>
+            <h3>{{ 'contact.phone' | translate }}</h3>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">📍</span>
+          <div>
+            <h3>{{ 'contact.location' | translate }}</h3>
+            <p>{{ 'contact.locationText' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-section">
+      <h2>{{ 'contact.formTitle' | translate }}</h2>
+      
+      <div *ngIf="successMessage" class="alert alert-success">
+        {{ 'contact.successMessage' | translate }}
+      </div>
+      
+      <div *ngIf="errorMessage" class="alert alert-error">
+        {{ 'contact.errorMessage' | translate }}
+      </div>
+
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">{{ 'contact.name' | translate }} *</label>
+          <input 
+            type="text" 
+            id="name" 
+            formControlName="name"
+            [class.invalid]="submitted && f['name'].errors">
+          <div *ngIf="submitted && f['name'].errors" class="error-message">
+            <span *ngIf="f['name'].errors['required']">{{ 'contact.nameRequired' | translate }}</span>
+            <span *ngIf="f['name'].errors['minlength']">{{ 'contact.nameMinLength' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">{{ 'contact.email' | translate }} *</label>
+          <input 
+            type="email" 
+            id="email" 
+            formControlName="email"
+            [class.invalid]="submitted && f['email'].errors">
+          <div *ngIf="submitted && f['email'].errors" class="error-message">
+            <span *ngIf="f['email'].errors['required']">{{ 'contact.emailRequired' | translate }}</span>
+            <span *ngIf="f['email'].errors['email']">{{ 'contact.emailInvalid' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">{{ 'contact.subject' | translate }} *</label>
+          <input 
+            type="text" 
+            id="subject" 
+            formControlName="subject"
+            [class.invalid]="submitted && f['subject'].errors">
+          <div *ngIf="submitted && f['subject'].errors" class="error-message">
+            <span *ngIf="f['subject'].errors['required']">{{ 'contact.subjectRequired' | translate }}</span>
+            <span *ngIf="f['subject'].errors['minlength']">{{ 'contact.subjectMinLength' | translate }}</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">{{ 'contact.message' | translate }} *</label>
+          <textarea 
+            id="message" 
+            formControlName="message"
+            rows="6"
+            [class.invalid]="submitted && f['message'].errors"></textarea>
+          <div *ngIf="submitted && f['message'].errors" class="error-message">
+            <span *ngIf="f['message'].errors['required']">{{ 'contact.messageRequired' | translate }}</span>
+            <span *ngIf="f['message'].errors['minlength']">{{ 'contact.messageMinLength' | translate }}</span>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-button">{{ 'contact.submit' | translate }}</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="skills-container">
+  <div class="section-header">
+    <h1>{{ 'skills.title' | translate }}</h1>
+    <p class="section-subtitle">{{ 'skills.subtitle' | translate }}</p>
+  </div>
+
+  <div class="skills-grid">
+    <div *ngFor="let skill of skills" class="skill-card">
+      <div class="skill-icon">{{ skill.icon }}</div>
+      <h3>{{ getText(skill.name) }}</h3>
+      <p>{{ getText(skill.description) }}</p>
+    </div>
+  </div>
+</div>

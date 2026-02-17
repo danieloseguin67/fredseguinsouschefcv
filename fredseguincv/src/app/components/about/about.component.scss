@@ -1,0 +1,138 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  .about-content {
+    .about-main {
+      background-color: var(--white);
+      padding: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      
+      .profile-section {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid var(--light-cream);
+        
+        .profile-image {
+          flex-shrink: 0;
+          
+          img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          }
+        }
+        
+        .profile-info {
+          h2 {
+            color: var(--dark-brown);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+          }
+          
+          h3 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            font-weight: 400;
+          }
+        }
+      }
+      
+      .biography {
+        margin-bottom: 2rem;
+        
+        p {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        }
+      }
+      
+      .philosophy-section {
+        background-color: var(--light-cream);
+        padding: 2rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        
+        h3 {
+          color: var(--dark-brown);
+          margin-bottom: 1rem;
+        }
+        
+        blockquote {
+          font-size: 1.2rem;
+          font-style: italic;
+          line-height: 1.7;
+          color: var(--text-dark);
+          margin: 0;
+          padding-left: 1.5rem;
+          border-left: 4px solid var(--primary-color);
+        }
+      }
+      
+      .achievements-section {
+        h3 {
+          color: var(--dark-brown);
+          margin-bottom: 1rem;
+        }
+        
+        ul {
+          list-style: none;
+          padding: 0;
+          
+          li {
+            padding: 0.75rem 0;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            
+            .achievement-icon {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+    
+    .about-content .about-main {
+      padding: 1.5rem;
+      
+      .profile-section {
+        flex-direction: column;
+        text-align: center;
+        
+        .profile-image img {
+          width: 150px;
+          height: 150px;
+        }
+        
+        .profile-info h2 {
+          font-size: 2rem;
+        }
+      }
+      
+      .biography p {
+        font-size: 1rem;
+      }
+      
+      .philosophy-section blockquote {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

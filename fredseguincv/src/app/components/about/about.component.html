@@ -1,0 +1,39 @@
+<div class="about-container">
+  <div class="section-header">
+    <h1>{{ 'about.title' | translate }}</h1>
+    <p class="section-subtitle">{{ 'about.subtitle' | translate }}</p>
+  </div>
+
+  <div class="about-content" *ngIf="aboutData.name">
+    <div class="about-main">
+      <div class="profile-section">
+        <div class="profile-image">
+          <img [src]="aboutData.photo" [alt]="aboutData.name">
+        </div>
+        <div class="profile-info">
+          <h2>{{ aboutData.name }}</h2>
+          <h3>{{ getText(aboutData.title) }}</h3>
+        </div>
+      </div>
+
+      <div class="biography">
+        <p *ngFor="let paragraph of aboutData.biography">{{ getText(paragraph) }}</p>
+      </div>
+
+      <div class="philosophy-section">
+        <h3>{{ 'about.philosophy' | translate }}</h3>
+        <blockquote>{{ getText(aboutData.philosophy) }}</blockquote>
+      </div>
+
+      <div class="achievements-section">
+        <h3>{{ 'about.achievements' | translate }}</h3>
+        <ul>
+          <li *ngFor="let achievement of aboutData.achievements">
+            <span class="achievement-icon">🏆</span>
+            {{ getText(achievement) }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

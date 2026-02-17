@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "skills": "Skills",
+    "services": "Services",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "All rights reserved"
+  },
+  "welcome": {
+    "message": "Welcome to sous chef home"
+  },
+  "home": {
+    "title": "Fred Seguin",
+    "subtitle": "Professional Sous Chef",
+    "description": "Crafting exceptional culinary experiences with passion and precision",
+    "carouselTitle": "My Culinary Journey",
+    "ctaTitle": "Ready to Experience Excellence?",
+    "ctaDescription": "Discover how I can bring exceptional culinary expertise to your next event or project",
+    "ctaButton": "Explore Services"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My culinary journey and achievements",
+    "keyAchievements": "Key Achievements:"
+  },
+  "skills": {
+    "title": "Culinary Skills & Expertise",
+    "subtitle": "My professional competencies and specializations"
+  },
+  "services": {
+    "title": "Professional Services",
+    "subtitle": "Bringing culinary excellence to your events and projects",
+    "features": "Features:",
+    "ctaTitle": "Interested in My Services?",
+    "ctaDescription": "Let's discuss how I can help make your event memorable",
+    "ctaButton": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My passion for culinary excellence",
+    "philosophy": "My Philosophy",
+    "achievements": "Notable Achievements"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's discuss your culinary needs",
+    "getInTouch": "Get in Touch",
+    "intro": "I'd love to hear from you! Whether you're interested in my services, have questions, or just want to chat about food, feel free to reach out.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "locationText": "Available for local and travel services",
+    "formTitle": "Send Me a Message",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "required": "required",
+    "submit": "Send Message",
+    "nameRequired": "Name is required",
+    "nameMinLength": "Name must be at least 2 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email",
+    "subjectRequired": "Subject is required",
+    "subjectMinLength": "Subject must be at least 3 characters",
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters",
+    "successMessage": "Your default mail client will open. Please send the email to complete your message.",
+    "errorMessage": "There was an error opening your mail client. Please try again or contact directly at fred.seguin@example.com"
+  }
+}
