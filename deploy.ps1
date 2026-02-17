@@ -18,22 +18,30 @@ Write-Host "Build completed successfully!" -ForegroundColor Green
 # Navigate to docs folder
 Set-Location ..\docs
 
-# Copy files from browser subfolder to docs root for custom domain
-Write-Host "Copying files to docs root for custom domain..." -ForegroundColor Blue
+# Copy files from browser subfolder to docs root
+Write-Host "Copying files to docs root..." -ForegroundColor Blue
 Copy-Item -Path "browser\*" -Destination "." -Recurse -Force
 
-# Create CNAME file for custom domain
-Write-Host "Creating CNAME file..." -ForegroundColor Blue
+# Create CNAME file in docs
+Write-Host "Creating CNAME file in docs..." -ForegroundColor Blue
 Set-Content -Path "CNAME" -Value "fred.seguin.dev" -NoNewline
 
-# Create .nojekyll file to bypass Jekyll processing
-Write-Host "Creating .nojekyll file..." -ForegroundColor Blue
+# Create .nojekyll file in docs
+Write-Host "Creating .nojekyll file in docs..." -ForegroundColor Blue
 New-Item -Path ".nojekyll" -ItemType File -Force | Out-Null
-
-Write-Host "Files copied, CNAME and .nojekyll created successfully!" -ForegroundColor Green
 
 # Navigate back to workspace root
 Set-Location ..
+
+# Copy all docs files to repository root for GitHub Pages
+Write-Host "Copying all files to repository root for GitHub Pages..." -ForegroundColor Blue
+Copy-Item -Path "docs\*" -Destination "." -Recurse -Force -Exclude @('browser')
+
+# Ensure CNAME and .nojekyll are in root
+Set-Content -Path "CNAME" -Value "fred.seguin.dev" -NoNewline
+New-Item -Path ".nojekyll" -ItemType File -Force | Out-Null
+
+Write-Host "All files deployed successfully!" -ForegroundColor Green
 
 # Git operations
 Write-Host "Adding changes to git..." -ForegroundColor Blue
