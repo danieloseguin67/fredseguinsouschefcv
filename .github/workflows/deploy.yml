@@ -40,11 +40,16 @@ jobs:
         working-directory: fredseguincv
         run: npm run build -- --configuration production --base-href=/
 
+      - name: Copy files to docs root  
+        run: |
+          rm -rf docs/*.html docs/*.js docs/*.css docs/assets || true
+          cp -r docs/browser/* docs/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Angular outputs to "../docs/browser" with new build system
-          path: ./docs/browser
+          # Upload docs folder with files copied from browser subfolder
+          path: docs
 
   deploy:
     environment:
