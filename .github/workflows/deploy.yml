@@ -37,6 +37,12 @@ jobs:
         working-directory: ./fredseguincv
         run: npm run build -- --configuration production --base-href /
 
+      - name: Prepare deployment files
+        run: |
+          cp -r docs/browser/* docs/
+          touch docs/.nojekyll
+          echo "fred.seguin.dev" > docs/CNAME
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -51,19 +57,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-          # Upload docs folder with files copied from browser subfolder
-          path: docs
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
