@@ -1,0 +1,44 @@
+{
+  "name": "Fred Seguin",
+  "title": {
+    "en": "Sous Chef",
+    "fr": "Sous Chef"
+  },
+  "photo": "assets/images/fred-seguin.jpg",
+  "biography": [
+    {
+      "en": "With over 8 years of culinary experience, I have dedicated my career to mastering the art of French cuisine and creating memorable dining experiences. My journey began at the prestigious Culinary Institute, where I discovered my passion for cooking and developed a strong foundation in classical techniques.",
+      "fr": "Avec plus de 8 ans d'expérience culinaire, j'ai consacré ma carrière à maîtriser l'art de la cuisine française et à créer des expériences gastronomiques mémorables. Mon parcours a commencé au prestigieux Institut Culinaire, où j'ai découvert ma passion pour la cuisine et développé une base solide en techniques classiques."
+    },
+    {
+      "en": "Currently serving as Sous Chef at Le Grand Restaurant, I work alongside talented chefs to maintain our Michelin-star rating while pushing the boundaries of modern gastronomy. My approach combines traditional French techniques with contemporary presentations, always focusing on the quality of ingredients and the harmony of flavors.",
+      "fr": "Actuellement Sous Chef au Grand Restaurant, je travaille aux côtés de chefs talentueux pour maintenir notre étoile Michelin tout en repoussant les limites de la gastronomie moderne. Mon approche combine les techniques françaises traditionnelles avec des présentations contemporaines, en mettant toujours l'accent sur la qualité des ingrédients et l'harmonie des saveurs."
+    },
+    {
+      "en": "Beyond the professional kitchen, I am passionate about sharing my knowledge through private chef services and cooking classes. I believe that great food has the power to bring people together and create lasting memories.",
+      "fr": "Au-delà de la cuisine professionnelle, je suis passionné par le partage de mes connaissances à travers des services de chef privé et des cours de cuisine. Je crois que la bonne cuisine a le pouvoir de rassembler les gens et de créer des souvenirs durables."
+    }
+  ],
+  "philosophy": {
+    "en": "Cooking is not just about following recipes—it's about understanding ingredients, respecting traditions, and having the courage to innovate. Every dish tells a story, and my goal is to make each one unforgettable.",
+    "fr": "La cuisine ne consiste pas seulement à suivre des recettes - il s'agit de comprendre les ingrédients, de respecter les traditions et d'avoir le courage d'innover. Chaque plat raconte une histoire, et mon objectif est de rendre chacun inoubliable."
+  },
+  "achievements": [
+    {
+      "en": "Michelin-starred restaurant team member",
+      "fr": "Membre d'une équipe de restaurant étoilé Michelin"
+    },
+    {
+      "en": "Culinary Institute Graduate with Honors",
+      "fr": "Diplômé de l'Institut Culinaire avec mention"
+    },
+    {
+      "en": "Multiple 'Chef of the Month' awards",
+      "fr": "Plusieurs prix 'Chef du Mois'"
+    },
+    {
+      "en": "Featured in local culinary publications",
+      "fr": "Présenté dans des publications culinaires locales"
+    }
+  ]
+}
