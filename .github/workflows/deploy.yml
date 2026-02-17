@@ -1,4 +1,4 @@
-name: Deploy Angular app
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -13,40 +13,35 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
           cache: 'npm'
-          cache-dependency-path: fredseguincv/package-lock.json
 
       - name: Install dependencies
         working-directory: fredseguincv
         run: npm ci
 
-      - name: Build Angular app
+      - name: Build
         working-directory: fredseguincv
         run: npm run build:prod
 
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload build artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Angular outputPath is "../docs" (see fredseguincv/angular.json),
-          # so after building in ./fredseguincv the static site is at ./docs
-          path: docs
+          # so the static site is at ./docs in the repo root
+          path: ./docs
 
   deploy:
     environment:
