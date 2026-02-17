@@ -5,10 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href /freddythechef/",
+    "build:prod": "ng build --configuration production --base-href /fredseguinsouschefcv/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href /freddythechef/ && npx angular-cli-ghpages --dir=dist/fredseguincv/browser"
+    "deploy": "ng build --configuration production --base-href /fredseguinsouschefcv/ && npx angular-cli-ghpages --dir=dist/fredseguincv/browser"
   },
   "private": true,
   "dependencies": {

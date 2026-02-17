@@ -4,7 +4,7 @@ This file contains step-by-step instructions for deploying the Fred Seguin websi
 
 ## Prerequisites
 
-1. You have push access to the GitHub repository: `danieloseguin67/freddythechef`
+1. You have push access to the GitHub repository: `danieloseguin67/fredseguinsouschefcv`
 2. You have Node.js and npm installed
 3. You have installed all project dependencies with `npm install`
 
@@ -18,7 +18,7 @@ npm run deploy
 
 This single command will:
 1. Build the project with production optimizations
-2. Set the correct base href for GitHub Pages (`/freddythechef/`)
+2. Set the correct base href for GitHub Pages (`/fredseguinsouschefcv/`)
 3. Deploy the built files to the `gh-pages` branch
 4. Push to GitHub
 
@@ -68,14 +68,14 @@ cp index.html 404.html
 git init
 git add .
 git commit -m "Deploy to GitHub Pages"
-git remote add origin https://github.com/danieloseguin67/freddythechef.git
+git remote add origin https://github.com/danieloseguin67/fredseguinsouschefcv.git
 git branch -M gh-pages
 git push -f origin gh-pages
 ```
 
 ### Step 5: Configure GitHub Pages
 
-1. Go to your GitHub repository: https://github.com/danieloseguin67/freddythechef
+1. Go to your GitHub repository: https://github.com/danieloseguin67/fredseguinsouschefcv
 2. Click on **Settings**
 3. Scroll down to **Pages** in the left sidebar
 4. Under **Source**, select:
@@ -94,7 +94,7 @@ You can check the deployment status:
 ### Step 7: Access Your Site
 
 Once deployed, your site will be available at:
-**https://danieloseguin67.github.io/freddythechef/**
+**https://danieloseguin67.github.io/fredseguinsouschefcv/**
 
 ## Troubleshooting
 
@@ -104,7 +104,7 @@ Once deployed, your site will be available at:
 
 ### Issue: CSS/Assets not loading
 
-**Solution**: Check that the base href is correctly set to `/freddythechef/` in the build command.
+**Solution**: Check that the base href is correctly set to `/fredseguinsouschefcv/` in the build command.
 
 ### Issue: Cannot push to repository
 
