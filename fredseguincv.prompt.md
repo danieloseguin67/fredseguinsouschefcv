@@ -12,3 +12,20 @@ generate angular19 web site with the following features:
 - Deployment configuration for githubpages
 - website should be optimized for SEO with appropriate meta tags, alt text for images, and structured data markup to enhance search engine visibility.
 - website colors and typography should be consistent throughout the site, following the modern and restaurant chef themed style with warm tones and elegant typography.
+
+## 404 Error Fix
+
+**Issue**: Getting 404 errors when accessing the deployed GitHub Pages site.
+
+**Root Cause**: The build scripts in `package.json` were using an incorrect base href `/freddythechef/` that didn't match the actual GitHub repository name `fredseguinsouschefcv`.
+
+**Solution**: Updated the base href in `package.json` build scripts:
+- Changed `build:prod` script from `--base-href /freddythechef/` to `--base-href /fredseguinsouschefcv/`
+- Changed `deploy` script from `--base-href /freddythechef/` to `--base-href /fredseguinsouschefcv/`
+
+After the fix, run:
+```bash
+npm run deploy
+```
+
+The site will be available at: https://danieloseguin67.github.io/fredseguinsouschefcv/
