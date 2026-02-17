@@ -22,7 +22,11 @@ Set-Location ..\docs
 Write-Host "Copying files to docs root for custom domain..." -ForegroundColor Blue
 Copy-Item -Path "browser\*" -Destination "." -Recurse -Force
 
-Write-Host "Files copied successfully!" -ForegroundColor Green
+# Create CNAME file for custom domain
+Write-Host "Creating CNAME file..." -ForegroundColor Blue
+Set-Content -Path "CNAME" -Value "fred.seguin.dev" -NoNewline
+
+Write-Host "Files copied and CNAME created successfully!" -ForegroundColor Green
 
 # Navigate back to workspace root
 Set-Location ..
