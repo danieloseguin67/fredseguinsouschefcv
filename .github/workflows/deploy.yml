@@ -33,9 +33,12 @@ jobs:
         working-directory: fredseguincv
         run: npm ci
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Build
         working-directory: fredseguincv
-        run: npm run build -- --configuration production
+        run: npm run build -- --configuration production --base-href=/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
