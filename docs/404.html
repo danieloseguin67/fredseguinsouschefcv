@@ -16,14 +16,14 @@
   <meta property="og:title" content="Fred Seguin - Professional Sous Chef">
   <meta property="og:description" content="Professional Sous Chef with expertise in French cuisine. Offering private chef services, catering, and cooking classes.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fred.seguin.dev/">
-  <meta property="og:image" content="https://fred.seguin.dev/assets/images/fred-seguin.jpg">
+  <meta property="og:url" content="https://danieloseguin67.github.io/fredseguinsouschefcv/">
+  <meta property="og:image" content="https://danieloseguin67.github.io/fredseguinsouschefcv/assets/images/fred-seguin.jpg">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fred Seguin - Professional Sous Chef">
   <meta name="twitter:description" content="Professional Sous Chef with expertise in French cuisine. Offering private chef services, catering, and cooking classes.">
-  <meta name="twitter:image" content="https://fred.seguin.dev/assets/images/fred-seguin.jpg">
+  <meta name="twitter:image" content="https://danieloseguin67.github.io/fredseguinsouschefcv/assets/images/fred-seguin.jpg">
   
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -33,15 +33,32 @@
     "name": "Fred Seguin",
     "jobTitle": "Sous Chef",
     "description": "Professional Sous Chef with over 8 years of culinary experience, specializing in French cuisine",
-    "url": "https://fred.seguin.dev/",
+    "url": "https://danieloseguin67.github.io/fredseguinsouschefcv/",
     "sameAs": [
       "https://github.com/danieloseguin67/fredseguinsouschefcv"
     ],
     "knowsAbout": ["French Cuisine", "Culinary Arts", "Kitchen Management", "Menu Development"]
   }
   </script>
+  
+  <!-- SPA Redirect Script for GitHub Pages -->
+  <script>
+    // Store the original path before GitHub Pages redirects to 404
+    sessionStorage.redirect = location.pathname;
+  </script>
 </head>
 <body>
   <app-root></app-root>
+  
+  <!-- Script to handle SPA routing on GitHub Pages -->
+  <script>
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.pathname) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 </body>
 </html>

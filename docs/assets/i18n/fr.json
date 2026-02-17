@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "services": "Services",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "Tous droits réservés"
+  },  "welcome": {
+    "message": "Bienvenue à la maison du sous-chef"
+  },  "home": {
+    "title": "Fred Seguin",
+    "subtitle": "Sous Chef Professionnel",
+    "description": "Créer des expériences culinaires exceptionnelles avec passion et précision",
+    "carouselTitle": "Mon Parcours Culinaire",
+    "ctaTitle": "Prêt à Vivre l'Excellence?",
+    "ctaDescription": "Découvrez comment je peux apporter une expertise culinaire exceptionnelle à votre prochain événement ou projet",
+    "ctaButton": "Découvrir les Services"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours culinaire et mes réalisations",
+    "keyAchievements": "Réalisations Clés:"
+  },
+  "skills": {
+    "title": "Compétences & Expertise Culinaire",
+    "subtitle": "Mes compétences professionnelles et spécialisations"
+  },
+  "services": {
+    "title": "Services Professionnels",
+    "subtitle": "Apporter l'excellence culinaire à vos événements et projets",
+    "features": "Caractéristiques:",
+    "ctaTitle": "Intéressé par Mes Services?",
+    "ctaDescription": "Discutons de la façon dont je peux rendre votre événement mémorable",
+    "ctaButton": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Ma passion pour l'excellence culinaire",
+    "philosophy": "Ma Philosophie",
+    "achievements": "Réalisations Notables"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Discutons de vos besoins culinaires",
+    "getInTouch": "Entrer en Contact",
+    "intro": "J'aimerais vous entendre! Que vous soyez intéressé par mes services, que vous ayez des questions ou que vous souhaitiez simplement discuter de cuisine, n'hésitez pas à me contacter.",
+    "email": "Courriel",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "locationText": "Disponible pour des services locaux et des déplacements",
+    "formTitle": "Envoyez-moi un Message",
+    "name": "Nom",
+    "subject": "Sujet",
+    "message": "Message",
+    "required": "requis",
+    "submit": "Envoyer le Message",
+    "nameRequired": "Le nom est requis",
+    "nameMinLength": "Le nom doit contenir au moins 2 caractères",
+    "emailRequired": "Le courriel est requis",
+    "emailInvalid": "Veuillez entrer un courriel valide",
+    "subjectRequired": "Le sujet est requis",
+    "subjectMinLength": "Le sujet doit contenir au moins 3 caractères",
+    "messageRequired": "Le message est requis",
+    "messageMinLength": "Le message doit contenir au moins 10 caractères",
+    "successMessage": "Votre client de messagerie par défaut s'ouvrira. Veuillez envoyer l'e-mail pour finaliser votre message.",
+    "errorMessage": "Une erreur s'est produite lors de l'ouverture de votre client de messagerie. Veuillez réessayer ou contacter directement à fred.seguin@example.com"
+  }
+}

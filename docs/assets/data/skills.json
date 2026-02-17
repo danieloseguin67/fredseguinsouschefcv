@@ -1,0 +1,90 @@
+[
+  {
+    "name": {
+      "en": "French Cuisine",
+      "fr": "Cuisine Française"
+    },
+    "icon": "🇫🇷",
+    "description": {
+      "en": "Expert in classical and modern French cooking techniques",
+      "fr": "Expert en techniques de cuisine française classique et moderne"
+    }
+  },
+  {
+    "name": {
+      "en": "Sauce Making",
+      "fr": "Préparation de Sauces"
+    },
+    "icon": "🍯",
+    "description": {
+      "en": "Master of the five mother sauces and derivatives",
+      "fr": "Maître des cinq sauces mères et dérivées"
+    }
+  },
+  {
+    "name": {
+      "en": "Meat Preparation",
+      "fr": "Préparation de Viandes"
+    },
+    "icon": "🥩",
+    "description": {
+      "en": "Skilled in butchery and cooking all types of proteins",
+      "fr": "Compétent en boucherie et cuisson de tous types de protéines"
+    }
+  },
+  {
+    "name": {
+      "en": "Pastry & Desserts",
+      "fr": "Pâtisserie & Desserts"
+    },
+    "icon": "🍰",
+    "description": {
+      "en": "Proficient in creating elegant desserts and pastries",
+      "fr": "Compétent dans la création de desserts et pâtisseries élégants"
+    }
+  },
+  {
+    "name": {
+      "en": "Kitchen Management",
+      "fr": "Gestion de Cuisine"
+    },
+    "icon": "👨‍🍳",
+    "description": {
+      "en": "Leadership and team coordination in high-pressure environments",
+      "fr": "Leadership et coordination d'équipe dans des environnements sous pression"
+    }
+  },
+  {
+    "name": {
+      "en": "Food Safety",
+      "fr": "Sécurité Alimentaire"
+    },
+    "icon": "✓",
+    "description": {
+      "en": "HACCP certified with strict hygiene standards",
+      "fr": "Certifié HACCP avec des normes d'hygiène strictes"
+    }
+  },
+  {
+    "name": {
+      "en": "Menu Development",
+      "fr": "Développement de Menus"
+    },
+    "icon": "📋",
+    "description": {
+      "en": "Creative menu planning and recipe development",
+      "fr": "Planification créative de menus et développement de recettes"
+    }
+  },
+  {
+    "name": {
+      "en": "Plating & Presentation",
+      "fr": "Dressage & Présentation"
+    },
+    "icon": "🎨",
+    "description": {
+      "en": "Artistic food presentation and garnishing techniques",
+      "fr": "Présentation artistique des plats et techniques de garniture"
+    }
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "title": {
+      "en": "Private Chef Services",
+      "fr": "Services de Chef Privé"
+    },
+    "description": {
+      "en": "Experience fine dining in the comfort of your home. I provide customized multi-course meals tailored to your preferences and dietary requirements.",
+      "fr": "Profitez d'une expérience gastronomique dans le confort de votre maison. Je propose des repas multi-plats personnalisés adaptés à vos préférences et exigences alimentaires."
+    },
+    "image": "assets/images/private-chef.jpg",
+    "features": [
+      {
+        "en": "Customized menu planning",
+        "fr": "Planification de menu personnalisée"
+      },
+      {
+        "en": "Fresh ingredient sourcing",
+        "fr": "Approvisionnement en ingrédients frais"
+      },
+      {
+        "en": "Professional kitchen setup",
+        "fr": "Installation professionnelle de cuisine"
+      },
+      {
+        "en": "Complete cleanup service",
+        "fr": "Service de nettoyage complet"
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Catering Services",
+      "fr": "Services de Traiteur"
+    },
+    "description": {
+      "en": "Elevate your special events with professionally catered meals. From intimate gatherings to large celebrations, I deliver exceptional culinary experiences.",
+      "fr": "Rehaussez vos événements spéciaux avec des repas de traiteur professionnels. Des rassemblements intimes aux grandes célébrations, je livre des expériences culinaires exceptionnelles."
+    },
+    "image": "assets/images/catering.jpg",
+    "features": [
+      {
+        "en": "Event menu consultation",
+        "fr": "Consultation de menu d'événement"
+      },
+      {
+        "en": "Professional service staff",
+        "fr": "Personnel de service professionnel"
+      },
+      {
+        "en": "Full event coordination",
+        "fr": "Coordination complète d'événement"
+      },
+      {
+        "en": "Dietary accommodations",
+        "fr": "Adaptations alimentaires"
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Cooking Classes",
+      "fr": "Cours de Cuisine"
+    },
+    "description": {
+      "en": "Learn the art of French cuisine through hands-on cooking classes. Perfect for individuals or groups looking to enhance their culinary skills.",
+      "fr": "Apprenez l'art de la cuisine française grâce à des cours de cuisine pratiques. Parfait pour les particuliers ou les groupes souhaitant améliorer leurs compétences culinaires."
+    },
+    "image": "assets/images/cooking-class.jpg",
+    "features": [
+      {
+        "en": "Small group instruction",
+        "fr": "Instruction en petit groupe"
+      },
+      {
+        "en": "All ingredients included",
+        "fr": "Tous les ingrédients inclus"
+      },
+      {
+        "en": "Recipe cards provided",
+        "fr": "Fiches de recettes fournies"
+      },
+      {
+        "en": "Wine pairing knowledge",
+        "fr": "Connaissance des accords mets-vins"
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Menu Consulting",
+      "fr": "Consultation de Menu"
+    },
+    "description": {
+      "en": "Professional menu development and culinary consulting for restaurants and food businesses. Let me help you create a winning menu.",
+      "fr": "Développement professionnel de menus et consultation culinaire pour restaurants et entreprises alimentaires. Laissez-moi vous aider à créer un menu gagnant."
+    },
+    "image": "assets/images/consulting.jpg",
+    "features": [
+      {
+        "en": "Menu concept development",
+        "fr": "Développement de concept de menu"
+      },
+      {
+        "en": "Recipe standardization",
+        "fr": "Standardisation des recettes"
+      },
+      {
+        "en": "Cost analysis",
+        "fr": "Analyse des coûts"
+      },
+      {
+        "en": "Staff training",
+        "fr": "Formation du personnel"
+      }
+    ]
+  }
+]
