@@ -1,0 +1,30 @@
+[
+  {
+    "image": "assets/images/meal1.jpg",
+    "caption": {
+      "en": "Exquisite French Cuisine",
+      "fr": "Cuisine Française Exquise"
+    }
+  },
+  {
+    "image": "assets/images/meal2.jpg",
+    "caption": {
+      "en": "Fine Dining Experience",
+      "fr": "Expérience Gastronomique"
+    }
+  },
+  {
+    "image": "assets/images/meal3.jpg",
+    "caption": {
+      "en": "Artisanal Plating",
+      "fr": "Dressage Artisanal"
+    }
+  },
+  {
+    "image": "assets/images/dinner-service.jpg",
+    "caption": {
+      "en": "Professional Dinner Service",
+      "fr": "Service de Dîner Professionnel"
+    }
+  }
+]

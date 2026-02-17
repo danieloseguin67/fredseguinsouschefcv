@@ -1,0 +1,83 @@
+[
+  {
+    "restaurant": "Le Grand Restaurant",
+    "role": {
+      "en": "Sous Chef",
+      "fr": "Sous Chef"
+    },
+    "period": "2020 - Present",
+    "description": {
+      "en": "Lead a team of 8 chefs in a Michelin-starred restaurant. Responsible for menu development, kitchen operations, and maintaining the highest standards of culinary excellence.",
+      "fr": "Dirige une équipe de 8 chefs dans un restaurant étoilé Michelin. Responsable du développement des menus, des opérations de cuisine et du maintien des plus hauts standards d'excellence culinaire."
+    },
+    "achievements": [
+      {
+        "en": "Helped maintain Michelin star rating",
+        "fr": "A contribué au maintien de l'étoile Michelin"
+      },
+      {
+        "en": "Developed seasonal menu items",
+        "fr": "Développé des plats de menu saisonniers"
+      },
+      {
+        "en": "Reduced food waste by 25%",
+        "fr": "Réduit le gaspillage alimentaire de 25%"
+      }
+    ]
+  },
+  {
+    "restaurant": "Bistro Moderne",
+    "role": {
+      "en": "Chef de Partie",
+      "fr": "Chef de Partie"
+    },
+    "period": "2017 - 2020",
+    "description": {
+      "en": "Managed the sauce station in a busy contemporary French bistro. Created signature sauces and coordinated with kitchen team to ensure timely service.",
+      "fr": "Géré le poste des sauces dans un bistrot français contemporain animé. Créé des sauces signature et coordonné avec l'équipe de cuisine pour assurer un service ponctuel."
+    },
+    "achievements": [
+      {
+        "en": "Created 5 signature sauce recipes",
+        "fr": "Créé 5 recettes de sauces signature"
+      },
+      {
+        "en": "Trained 3 junior chefs",
+        "fr": "Formé 3 chefs juniors"
+      },
+      {
+        "en": "Awarded 'Chef of the Month' 4 times",
+        "fr": "Décerné 'Chef du Mois' 4 fois"
+      }
+    ]
+  },
+  {
+    "restaurant": {
+      "en": "Culinary Institute",
+      "fr": "Institut Culinaire"
+    },
+    "role": {
+      "en": "Culinary Arts Student",
+      "fr": "Étudiant en Arts Culinaires"
+    },
+    "period": "2015 - 2017",
+    "description": {
+      "en": "Completed comprehensive culinary arts program with focus on French and contemporary cuisine techniques.",
+      "fr": "Complété un programme complet en arts culinaires avec un accent sur les techniques de cuisine française et contemporaine."
+    },
+    "achievements": [
+      {
+        "en": "Graduated with honors",
+        "fr": "Diplômé avec mention"
+      },
+      {
+        "en": "Won student competition for best dessert",
+        "fr": "Remporté la compétition étudiante pour le meilleur dessert"
+      },
+      {
+        "en": "Completed externship at renowned restaurant",
+        "fr": "Complété un stage dans un restaurant renommé"
+      }
+    ]
+  }
+]
