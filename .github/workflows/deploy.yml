@@ -36,12 +36,14 @@ jobs:
 
       - name: Build Angular app
         working-directory: fredseguincv
-        run: npm run build -- --base-href=/fredseguinsouschefcv/
+        run: npm run build:prod
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: fredseguincv/dist/fredseguincv
+          # Angular outputPath is "../docs" (see fredseguincv/angular.json),
+          # so after building in ./fredseguincv the static site is at ./docs
+          path: docs
 
   deploy:
     environment:
