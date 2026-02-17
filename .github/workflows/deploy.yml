@@ -38,7 +38,7 @@ jobs:
 
       - name: Build
         working-directory: fredseguincv
-        run: npm run build -- --configuration production --base-href=/
+        run: npm run build -- --configuration production --base-href=/fredseguinsouschefcv/
 
       - name: Copy files to docs root  
         run: |
