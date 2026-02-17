@@ -26,7 +26,11 @@ Copy-Item -Path "browser\*" -Destination "." -Recurse -Force
 Write-Host "Creating CNAME file..." -ForegroundColor Blue
 Set-Content -Path "CNAME" -Value "fred.seguin.dev" -NoNewline
 
-Write-Host "Files copied and CNAME created successfully!" -ForegroundColor Green
+# Create .nojekyll file to bypass Jekyll processing
+Write-Host "Creating .nojekyll file..." -ForegroundColor Blue
+New-Item -Path ".nojekyll" -ItemType File -Force | Out-Null
+
+Write-Host "Files copied, CNAME and .nojekyll created successfully!" -ForegroundColor Green
 
 # Navigate back to workspace root
 Set-Location ..
