@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -30,24 +30,31 @@ jobs:
           cache-dependency-path: fredseguincv/package-lock.json
 
       - name: Install dependencies
-        working-directory: fredseguincv
+        working-directory: ./fredseguincv
         run: npm ci
+
+      - name: Build with correct base-href
+        working-directory: ./fredseguincv
+        run: npm run build -- --configuration production --base-href /
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build
-        working-directory: fredseguincv
-        run: npm run build -- --configuration production --base-href=/fredseguinsouschefcv/
-
-      - name: Copy files to docs root  
-        run: |
-          rm -rf docs/*.html docs/*.js docs/*.css docs/assets || true
-          cp -r docs/browser/* docs/
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          path: ./docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
           # Upload docs folder with files copied from browser subfolder
           path: docs
 
