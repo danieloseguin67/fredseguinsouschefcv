@@ -43,9 +43,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Angular outputPath is "../docs" (see fredseguincv/angular.json),
-          # so the static site is at ./docs in the repo root
-          path: ./docs
+          # Angular outputs to "../docs/browser" with new build system
+          path: ./docs/browser
 
   deploy:
     environment:
