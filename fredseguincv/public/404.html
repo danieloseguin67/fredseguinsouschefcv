@@ -40,8 +40,25 @@
     "knowsAbout": ["French Cuisine", "Culinary Arts", "Kitchen Management", "Menu Development"]
   }
   </script>
+  
+  <!-- SPA Redirect Script for GitHub Pages -->
+  <script>
+    // Store the original path before GitHub Pages redirects to 404
+    sessionStorage.redirect = location.pathname;
+  </script>
 </head>
 <body>
   <app-root></app-root>
+  
+  <!-- Script to handle SPA routing on GitHub Pages -->
+  <script>
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.pathname) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 </body>
 </html>
