@@ -1,23 +1,33 @@
 # Deployment Instructions
 
-This file contains step-by-step instructions for deploying the Fred Seguin website to GitHub Pages.
+This file contains step-by-step instructions for deploying the Fred Seguin website to the custom domain https://fred.seguin.dev/.
 
 ## Prerequisites
 
 1. You have push access to the GitHub repository: `danieloseguin67/fredseguinsouschefcv`
 2. You have Node.js and npm installed
 3. You have installed all project dependencies with `npm install`
+4. DNS CNAME record is configured to point `fred.seguin.dev` to `danieloseguin67.github.io`
 
 ## Quick Deployment
 
-The easiest way to deploy is using the npm script:
+The easiest way to deploy is using the PowerShell deployment script:
+
+```powershell
+# From the workspace root directory
+.\deploy.ps1
+```
+
+This single script will:
+1. Build the project with production optimizations
+2. Copy files from the browser subfolder to docs root (required for custom domain)
+3. Commit and push changes to GitHub
+
+Alternatively, you can use the npm script (but you'll need to manually copy files afterward):
 
 ```bash
 npm run deploy
 ```
-
-This single command will:
-1. Build the project with production optimizations
 2. Set the correct base href for GitHub Pages (`/fredseguinsouschefcv/`)
 3. Deploy the built files to the `gh-pages` branch
 4. Push to GitHub
